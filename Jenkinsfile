@@ -6,9 +6,10 @@ pipeline{
                 echo "$GIT_BRANCH"
             }
         }
-        stage("Hello world"){
+        stage("Docker Build"){
             steps{
-                echo "Hola mundo prueba"
+                echo "Quiero un texto de docker ps"
+                docker ps > prueba.txt
             }
         }
     }
