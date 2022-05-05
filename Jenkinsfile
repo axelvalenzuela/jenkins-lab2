@@ -8,7 +8,7 @@ pipeline{
         }
         stage("Docker Build"){
             steps{
-                echo "Quiero un texto de docker ps" && docker ps -a
+                pwsh (script: 'docker images -a')
             }
         }
     }
