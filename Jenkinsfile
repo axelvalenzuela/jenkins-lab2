@@ -8,8 +8,7 @@ pipeline{
         }
         stage("Docker Build"){
             steps{
-                echo "Quiero un texto de docker ps"
-                docker ps > prueba.txt
+                echo "Quiero un texto de docker ps" && docker ps -a
             }
         }
     }
