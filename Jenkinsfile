@@ -27,9 +27,6 @@ pipeline{
                 success{
                     echo "Stop ------- post-success mensaje "
                 }
-                failure{
-                    echo "Stop ------- post-success mensaje "
-                }
             }
         }
     }
