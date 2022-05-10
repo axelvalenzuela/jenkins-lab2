@@ -15,7 +15,7 @@
                   path: /home/avalenzuela/target
                   state: directory
             - name: copy the source code to hosts
-              copy: src =./{{ item }} dest=/home/avalenzuela/target/
+              copy: src=./{{ item }} dest=/home/avalenzuela/target/
               become_user: avalenzuela
               with_items:
                   - app

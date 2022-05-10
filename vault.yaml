@@ -1,4 +1,5 @@
 - hosts: localhost
+  gather_facts: false
   become: true
   vars_files: passwd.yaml
   tasks:
