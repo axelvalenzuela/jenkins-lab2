@@ -12,5 +12,5 @@
             - name: Create new directory
               become_user: avalenzuela
               file:
-                 path: /home/ubuntu/target
+                 path: /home/avalenzuela/target
                  state: directory
