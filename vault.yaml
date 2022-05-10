@@ -1,0 +1,6 @@
+- hosts: localhost
+  become: true
+  vars_files: passwd.yaml
+  tasks:
+          - ansible.builtin.debug:
+                  msg: The value of the variable from passwd.yaml
